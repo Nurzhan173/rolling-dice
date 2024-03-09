@@ -1,0 +1,85 @@
+.App {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100px;
+  margin: auto;
+}
+
+.dice-container {
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  justify-content: center;
+}
+
+.dice {
+  width: 100px;
+  height: 100px;
+  padding: 25px;
+  border: 1px solid black;
+  margin: auto;
+}
+
+.dice-inner {
+  position: relative;
+  height: 100%;
+}
+
+.dot {
+  border-radius: 50%;
+  background: black;
+  height: 25px;
+  width: 25px;
+  position: absolute;
+}
+
+.center {
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.bottom-left {
+  left: 0;
+  bottom: 0;
+  transform: translate(-50%, 50%);
+}
+
+.bottom-right {
+  bottom: 0;
+  right: 0;
+  transform: translate(50%, 50%);
+}
+
+.top-left {
+  top: 0;
+  left: 0;
+  transform: translate(-50%, -50%);
+}
+
+.top-right {
+  top: 0;
+  right: 0;
+  transform: translate(50%, -50%);
+}
+
+.middle-left {
+  top: 50%;
+  left: 0;
+  transform: translate(-50%, -50%);
+}
+
+.middle-right {
+  top: 50%;
+  right: 0;
+  transform: translate(50%, -50%);
+}
